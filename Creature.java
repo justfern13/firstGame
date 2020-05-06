@@ -7,12 +7,13 @@ public class Creature {
    private String name;
    
    public Creature() {
-      atk = 2;
-      def = 1;
-      spd = 1;
-      maxHp = 10;
-      currentHp = maxHp;
-      name = "Vaj Eina";
+      this.atk = 2;
+      this.def = 1;
+      this.spd = 1;
+      this.maxHp = 10;
+      this.currentHp = maxHp;
+      
+      this.name = "Vaj Eina";
    }
    
    public int getAtk() {
@@ -28,9 +29,6 @@ public class Creature {
    }
    
    public int getCurrentHp() {
-      if (currentHp < 0) {
-         currentHp = 0;
-      }
       return currentHp;
    }
    
